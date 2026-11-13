@@ -1,0 +1,188 @@
+body {
+    background-color: #0f0f0f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0; /*menghilakan jarak putih bawahan broser*/
+}
+
+/* atur navbar atau header kita di sini semua  */
+
+/* nav kiri  */
+.top-bar {
+    /* background-color: black; */
+    display: flex;
+    padding: 0px 8px 0px 8px;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-kiri {
+    display: flex;
+    margin: none;
+    margin-left: 8px;
+    margin-top: 10px;
+    font-size: 20px;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-garis-tiga-nav {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.03ms ease;
+}
+
+.icon-garis-tiga-nav:hover {
+    background-color: #242424;
+}
+
+.icon-youtube-nav {
+    color: red;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+/* nav tengah */
+.nav-tengah {
+    display: flex;
+    /* background-color: #242424; */
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-tengah input {
+    background-color: #242424;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    padding: 15px 15px;
+    width: 500px;
+}
+
+/* Pembungkus utama search bar (pencarian), (bentuk kapsul lonjong) */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    border: 1px solid #303030;
+    border-radius: 40px;
+    padding-left: 15px;
+    overflow: hidden;
+    width: 600px;
+    height: 40px;
+}
+
+/* Kotak teks inputnya */
+.search-container input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Tombol ikon kaca pembesar di sebelah kanan input */
+.search-btn {
+    background-color: #222222;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 65px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-left: 1px solid #303030;
+    transition: background-color 0.02s ease;
+}
+
+.search-btn:hover {
+    background-color: #3f3f41;
+}
+
+
+.icon-mic-nav {
+    display: flex;
+    font-size: 20px;
+    background-color: #242424;
+    color: white;
+    padding: 11px 13px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.03ms ease;
+}
+
+.icon-mic-nav:hover {
+    background-color: #3f3f41;
+}
+
+/* nav kanan  */
+.nav-kanan {
+    display: flex;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.nav-icon-plus{
+    display: flex;
+    background-color: #242424;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition: background-color 0.03ms ease;
+}
+
+.nav-icon-plus:hover {
+    background-color: #3f3f41;
+}
+
+.nav-icon-plus span {
+    font-size: 14px;
+}
+
+.icon-plus-nav {
+    font-size: 20px;
+}
+
+.icon-bell-nav {
+    display: flex;
+    background-color: #0f0f0f;
+    color: white;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.03ms ease;
+}
+
+.icon-bell-nav:hover {
+    background-color: #3f3f41;
+}
+
+.img-profil-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
