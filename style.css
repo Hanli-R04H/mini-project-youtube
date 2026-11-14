@@ -14,7 +14,8 @@ html, body {
     /* background-color: black; */
     display: flex;
     padding: 0px 8px 0px 8px;
-    margin-top: 5px;
+    padding-bottom: 8px;
+    margin-top: 8px;
     justify-content: space-between;
     align-items: center;
 }
@@ -216,7 +217,11 @@ html, body {
     background-color: #0f0f0f;
     flex: 1;
     height: 100%;
-    padding: 4px;
+    overflow-y: auto;
+    padding: 5px;
+    display: flex;          /* <-- INI YANG KURANG (Wajib ada biar flex-direction jalan) */
+    flex-direction: column; /* Biar video-grid dan shorts tersusun ke bawah */
+    gap: 20px;
 }
 
 .list-menu-main {
@@ -224,6 +229,21 @@ html, body {
     gap: 10px;
     flex-wrap: wrap; /* KUNCI UTAMA: Biar kalau kotaknya penuh, otomatis turun ke baris bawah dengan rapi */
     padding: 15px;
+}
+
+.list-menu-main span {
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .list-menu-main p {
@@ -239,4 +259,162 @@ html, body {
     border-radius: 10px;
     cursor: pointer;
     white-space: nowrap;  /* KUNCI BIAR TIDAK TURUN KE BAWAH: Teks panjang tetap di satu baris dalam kotaknya */
+}
+
+/* album atau playlist atau video card kita  */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 1px; */
+    gap: 2px;
+}
+
+.video-card {
+    background-color: #0f0f0f;
+    border-radius: 15px;
+    padding: 8px 10px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    /* margin: 0; */
+    cursor: pointer;
+    width: calc(31.0% - 8px); /* KUNCI: Set jatah lebarnya pas 3 biji dalam satu baris */
+    flex: unset; /* Matikan flex: 1 biar ukurannya gak ikut-ikutan melar kalau ada elemen lain masuk */
+    transition: transform 0.50s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.01);
+    background-color: #242424;
+}
+
+.profil-chanel-judul {
+    display: flex;
+    margin: 0;
+    margin-bottom: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.video-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-video-thumbnail {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img-profil-chanel {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.video-info {
+    display: flex;
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-left: 45px;
+    margin: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.channel-info {
+    margin: 0;
+}
+
+/* bagian short vdieo grid */
+.shorts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shorts-section-card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    gap: 5px;
+}
+
+.shorts-grid {
+    background-color: #0f0f0f;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    width: calc(20% - 30px);
+    flex: unset;
+    cursor: pointer;
+    transition: transform 0.50s ease;
+}
+
+.shorts-grid:hover {
+    transform: scale(1.01);
+    background-color: #242424;
+}
+
+.shorts-thumbnail {
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.shorts-thumbnail h4 {
+    margin: 0;
+    margin-top: 8px;
+}
+
+.jmlh-penonton {
+    color: #b3b3b3;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.img-shorts-thumbnail {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.shorts-header {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.shorts-header span {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-titik-tiga-short {
+    cursor: pointer;
+    margin: none;
+    margin-right: 30px;
+}
+
+.icon-bolt {
+    color: red;
+    font-size: 23px;
 }
