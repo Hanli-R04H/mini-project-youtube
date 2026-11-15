@@ -206,18 +206,21 @@ html, body {
 }
 
 .sidebar {
-    background-color: #242424;
-    width: 18%;
+    display: flex;
+    background-color: #0f0f0f;
+    width: 15%;
     height: 100%;
-    padding: 4px;
-    /* box-sizing: border-box; */
+    padding: 8px 8px;
+    flex-direction: column;
+    overflow-y: auto; 
+    padding-bottom: 40px;
+    gap: 15px;
 }
 
 .main-content {
     background-color: #0f0f0f;
     flex: 1;
     height: 100%;
-    overflow-y: auto;
     padding: 5px;
     display: flex;          /* <-- INI YANG KURANG (Wajib ada biar flex-direction jalan) */
     flex-direction: column; /* Biar video-grid dan shorts tersusun ke bawah */
@@ -227,8 +230,7 @@ html, body {
 .list-menu-main {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap; /* KUNCI UTAMA: Biar kalau kotaknya penuh, otomatis turun ke baris bawah dengan rapi */
-    padding: 15px;
+    padding: 1px;
 }
 
 .list-menu-main span {
@@ -267,6 +269,7 @@ html, body {
     flex-wrap: wrap;
     /* margin-top: 1px; */
     gap: 2px;
+    overflow-y: auto;
 }
 
 .video-card {
@@ -417,4 +420,56 @@ html, body {
 .icon-bolt {
     color: red;
     font-size: 23px;
+}
+
+
+/* gas sidebar atau menu samping youtube */
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: 1px;   
+}
+
+.sidebar-item {
+    display: flex;
+    background-color: #0f0f0f;
+    color: white;
+    text-decoration: none; /* KUNCI UTAMA: Menghilangkan garis bawah pada link */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.03ms ease;
+}
+
+.sidebar-item:hover {
+    background-color: #242424;
+}
+
+.sidebar-section span {
+    display: flex;
+    color: white;
+    font-size: 14px;
+}
+
+.icon-sidebar {
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar-item img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border: none;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.info-tambahan-sidebar {
+    font-size: 14px;
+    color: #b3b3b3;
 }
