@@ -116,7 +116,6 @@ html, body {
     background-color: #3f3f41;
 }
 
-
 .icon-mic-nav {
     display: flex;
     font-size: 20px;
@@ -277,6 +276,7 @@ html, body {
     border-radius: 15px;
     padding: 8px 10px;
     padding-bottom: 30px;
+    margin-top: 5px;
     margin-left: 10px;
     /* margin-right: 10px; */
     /* margin: 0; */
@@ -289,6 +289,22 @@ html, body {
 .video-card:hover {
     transform: scale(1.01);
     background-color: #242424;
+}
+
+.icon-titik-tiga-video-card {
+    display: flex;
+    background-color: transparent;
+    width: 20%;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.03ms ease;
+}
+
+.icon-titik-tiga-video-card:hover {
+    background-color: #3f3f41;
 }
 
 .profil-chanel-judul {
@@ -448,6 +464,11 @@ html, body {
     background-color: #242424;
 }
 
+.judul-item-sidebar {
+    display: flex;
+    font-weight: bold;
+}
+
 .sidebar-section span {
     display: flex;
     color: white;
@@ -473,3 +494,4 @@ html, body {
     font-size: 14px;
     color: #b3b3b3;
 }
+
